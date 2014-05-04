@@ -1,0 +1,7 @@
+#! /bin/sh
+
+rm -rf /usr/local/ibeacon-detector
+ln -s `readlink -m .` /usr/local
+rm -rf /etc/init.d/ibeacon-detector
+cp init.d/ibeacon-detector /etc/init.d/ibeacon-detector
+update-rc.d ibeacon-detector defaults

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha",
     "install": "node install-conditional-deps.js",
+    "postinstall": "npm install forever -g",
     "start": "node index.js"
   },
   "author": {

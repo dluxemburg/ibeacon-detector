@@ -1,0 +1,20 @@
+#! /bin/sh
+# /etc/init.d/ibeacon-detector
+
+case "$1" in
+  start)
+    echo "Starting iBeacon detector node app"
+    hciconfig hci0 up
+    /usr/local/ibeacon-detector/start
+    ;;
+  stop)
+    echo "Stopping all node processes"
+    killall node
+    ;;
+  *)
+    echo "Usage: /etc/init.d/ibeacon-detector {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
