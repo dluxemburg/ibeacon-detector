@@ -1,6 +1,16 @@
 #! /bin/sh
 # /etc/init.d/ibeacon-detector
 
+### BEGIN INIT INFO
+# Provides:          ibeacon-detector
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: iBeacon Detector autostart
+# Description:       iBeacon Detector app (https://github.com/dluxemburg/ibeacon-detector) autostart, thanks to http://www.stuffaboutcode.com/2012/06/raspberry-pi-run-program-at-start-up.html
+### END INIT INFO
+
 case "$1" in
   start)
     echo "Starting iBeacon detector node app"
