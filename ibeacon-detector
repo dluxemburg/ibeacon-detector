@@ -5,7 +5,7 @@ case "$1" in
   start)
     echo "Starting iBeacon detector node app"
     hciconfig hci0 up
-    /usr/local/ibeacon-detector/start
+    sh /usr/local/ibeacon-detector/start
     ;;
   stop)
     echo "Stopping all node processes"
