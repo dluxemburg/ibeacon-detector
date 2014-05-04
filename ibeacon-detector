@@ -28,7 +28,7 @@ case "$1" in
     ;;
   stop)
     echo "Stopping all Forever processes and shutting down display"
-    exec /usr/local/bin/forever stopall
+    /usr/local/bin/forever stopall
     /usr/local/sbin/node /usr/local/ibeacon-detector/clear-display.js
     ;;
   *)
