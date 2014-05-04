@@ -26,7 +26,7 @@ case "$1" in
     /usr/local/bin/forever start -al /var/log/forever.log -o /var/log/ibeacon-detector.log -e /var/log/ibeacon-detector-error.log sourceDir=/usr/local/ibeacon-detector index.js
     ;;
   stop)
-    echo "Stopping all node processes"
+    echo "Stopping all Forever processes"
     exec /usr/local/bin/forever stopall
     ;;
   *)

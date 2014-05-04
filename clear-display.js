@@ -1,3 +1,8 @@
 var display = new require('./lib/display').Display()
-display.clear()
-dis
+setTimeout(function(){
+  display.setBacklight(false)
+  display.clear()
+}, 250)
+setTimeout(function(){
+  process.exit()
+},500)
