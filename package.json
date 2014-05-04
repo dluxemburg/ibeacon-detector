@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "install": "node install-conditional-deps.js"
+    "install": "node install-conditional-deps.js",
+    "start": "node index.js"
   },
   "author": {
     "name": "Daniel Luxemburg",
@@ -18,7 +19,8 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "^1.18.2",
-    "expect.js": "^0.3.1"
+    "expect.js": "^0.3.1",
+    "sinon": "^1.9.1"
   },
   "dependencies": {
     "lodash": "^2.4.1",
