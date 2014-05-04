@@ -16,6 +16,7 @@
 
 
 export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/sbin
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export HOME=/root
 
@@ -26,8 +27,9 @@ case "$1" in
     /usr/local/bin/forever start -al /var/log/forever.log -o /var/log/ibeacon-detector.log -e /var/log/ibeacon-detector-error.log sourceDir=/usr/local/ibeacon-detector index.js
     ;;
   stop)
-    echo "Stopping all Forever processes"
+    echo "Stopping all Forever processes and shutting down display"
     exec /usr/local/bin/forever stopall
+    /usr/local/sbin/node /usr/local/ibeacon-detector/clear-display.js
     ;;
   *)
     echo "Usage: /etc/init.d/ibeacon-detector {start|stop}"
