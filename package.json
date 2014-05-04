@@ -5,9 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "install": "install-conditional-deps.js"
+    "install": "node install-conditional-deps.js"
   },
-  "author": "Daniel Luxemburg",
+  "author": {
+    "name": "Daniel Luxemburg",
+    "email": "daniel.luxemburg@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dluxemburg/ibeacon-detector.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "mocha": "^1.18.2"
