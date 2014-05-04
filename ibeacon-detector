@@ -15,8 +15,8 @@
 case "$1" in
   start)
     echo "Starting iBeacon detector node app"
-    hciconfig hci0 up
-    sh /usr/local/ibeacon-detector/start
+    /usr/local/bin/hciconfig hci0 up
+    /usr/local/bin/forever start -a -l ~/detector-forever.log -o ~/detecer-forever-out.log -e ~/detector-forever-err.log /usr/local/ibeacon-detector/index.js
     ;;
   stop)
     echo "Stopping all node processes"
