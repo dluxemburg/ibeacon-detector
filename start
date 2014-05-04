@@ -1,2 +1,2 @@
 cd /usr/local/ibeacon-detector
-forever start -a -l forever.log -o out.log -e err.log /usr/local/ibeacon-detector/index.js
+/usr/local/bin/forever start -a -l forever.log -o out.log -e err.log /usr/local/ibeacon-detector/index.js
