@@ -1,0 +1,19 @@
+{
+  "name": "ibeacon-detector",
+  "version": "0.0.0",
+  "description": "iBeacon detection demo for Raspberry Pi",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "install": "install-conditional-deps.js"
+  },
+  "author": "Daniel Luxemburg",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^1.18.2"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "noble": "^0.3.0"
+  }
+}
