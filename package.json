@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "lodash": "^2.4.1",
-    "noble": "^0.3.0"
+    "noble": "^0.3.0",
+    "coffee-script": "^1.7.1"
   }
 }
