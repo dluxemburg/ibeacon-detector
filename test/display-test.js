@@ -1,4 +1,5 @@
 var expect = require('expect.js'),
+    sinon = require('sinon'),
     Display = require('../lib/display').Display
 
 describe("Display", function(){

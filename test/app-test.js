@@ -6,16 +6,18 @@ describe("IBeaconDetector", function(){
 
   describe("new", function(){
 
-    var options, detector, display, app
+    var options, detector, display, blinker, app
 
     before(function(){
       options = {x: 'y'}
       detector = {on: sinon.spy()}
       display = {on: sinon.spy()}
+      blinker = {blink: sinon.spy()}
 
       app = new IBeaconDetector(options, {
                                   detector: detector,
-                                  display: display
+                                  display: display,
+                                  blinker: blinker
                                 })
     })
 
@@ -23,9 +25,10 @@ describe("IBeaconDetector", function(){
       expect(app.options.x).to.eql('y')
     })
 
-    it("accepts detector and display dependencies", function(){
+    it("accepts detector, display, and blinker dependencies", function(){
       expect(app.detector).to.eql(detector)
       expect(app.display).to.eql(display)
+      expect(app.blinker).to.eql(blinker)
     })
 
     it("calls display#on", function(){

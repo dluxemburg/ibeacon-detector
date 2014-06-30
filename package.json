@@ -25,6 +25,9 @@
   "dependencies": {
     "lodash": "^2.4.1",
     "noble": "^0.3.0",
-    "coffee-script": "^1.7.1"
+    "coffee-script": "^1.7.1",
+    "install": "^0.1.7",
+    "npm": "^1.4.17",
+    "node-blink1": "^0.1.2"
   }
 }
