@@ -8,6 +8,12 @@ noble.on('discover', function(per){
         ser.on('characteristicsDiscover', function(chs){
           chs.forEach(function(ch){
             if(ch.name) console.log('  '+ch.name)
+            ch.on('descriptorsDiscover', function(descs){
+              descs.forEach(function(desc){
+                if(desc.name) console.log('   '+desc.name)
+              })
+            })
+            ch.discoverDescriptors()
           })
         })
         ser.discoverCharacteristics()
