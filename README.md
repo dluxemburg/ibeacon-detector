@@ -19,3 +19,7 @@ This is a small iBeacon detector application designed to run on a Raspberry Pi w
 4. `npm install` to install dependencies
 5. `sudo setup` to copy the `init.d` script
 6. Now the applicition will start when the Pi boots up
+
+## Slides
+
+- Slides for this talk as presented at Designers of Things 2014 can be found [here](http://www.slideshare.net/dluxemburg/getting-started-with-ibeacons-designers-of-things)
