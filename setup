@@ -1,6 +1,5 @@
 #! /bin/sh
 
-sudo npm install forever -g
 sudo rm -rf /usr/local/ibeacon-detector
 sudo ln -s `readlink -m .` /usr/local
 sudo rm -rf /etc/init.d/ibeacon-detector
